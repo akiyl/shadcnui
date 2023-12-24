@@ -46,7 +46,7 @@ const MainNav = () => {
         <Link href="/docs">Documentation</Link>
         <span>Components</span>
         <Link href="/themes">Themes</Link>
-        <Link href="/Examples/dashboard">Examples</Link>
+        <Link href="home/example/dashboard">Examples</Link>
         <span>Github</span>
       </div>
       <div className="flex mr-4 gap-2  justify-center items-center">
