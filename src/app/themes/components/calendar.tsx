@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import { Transition } from "react-transition-group";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-
-const CustomCalendar: React.FC = () => {
+interface MyComponentProps {
+  themeColor: string;
+}
+const CustomCalendar: React.FC<MyComponentProps> = ({ themeColor }) => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
 
   const prevMonth = () => {

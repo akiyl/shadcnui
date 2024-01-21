@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import MainNav from "../components/homeComponents/Images/nav";
+import MainNav from "../themes/components/nav";
 import Link from "next/link";
 
 import AuthPage from "./example/authentication/page";

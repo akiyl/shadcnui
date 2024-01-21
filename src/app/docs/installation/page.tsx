@@ -2,7 +2,7 @@ import React from "react";
 const Installation = () => {
   return (
     <>
-      <div className="mx-auto w-full min-w-0 overflow-scroll h-screen">
+      <div className="mx-auto w-full min-w-0  h-screen scroll">
         <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
           <div className="overflow-hidden text-ellipsis whitespace-nowrap">
             Docs

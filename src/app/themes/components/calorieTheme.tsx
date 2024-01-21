@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
-
-const CaloriesTheme: React.FC = () => {
+interface MyComponentProps {
+  themeColor: string;
+}
+const CaloriesTheme: React.FC<MyComponentProps> = ({ themeColor }) => {
   const [caloriesGoal, setCaloriesGoal] = useState<number>(350);
 
   const handleIncrement = () => {
@@ -18,7 +20,7 @@ const CaloriesTheme: React.FC = () => {
 
   const handleSetGoal = () => {
     // Add logic for handling the set goal action
-    console.log(`Set goal to ${caloriesGoal} calories/day`);
+    console.log(themeColor);
   };
 
   // Placeholder for the chart (Replace with your charting library/component)
@@ -67,7 +69,7 @@ const CaloriesTheme: React.FC = () => {
       <div className="flex items-center p-6 pt-0">
         <button
           onClick={handleSetGoal}
-          className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 w-full"
+          className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50  text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 w-full  bg-[${themeColor}]`}
         >
           Set Goal
         </button>

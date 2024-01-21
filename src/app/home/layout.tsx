@@ -12,18 +12,17 @@ export default function HomeLayout({
   return (
     <div>
       <section>
-        <div>
+        <div className="  p-16 flex-col flex  items-center">
           <a
             href="/"
-            className="inline-flex text-xs items-center rounded-lg bg-[rgb(240 3.7% 15.9%)]"
+            className="inline-flex text-xs items-center rounded-[5px] gap-2 bg-[#27272A] px-1"
           >
-            '🎉'
-            <div></div>
-            <span className="flex items-center ">
-              introducing Style,a new CLI and more.{" "}
+            <div className="text-[8px]">🎉</div>
+            <span className="flex items-center text-[8px] leading-3 tracking-wider">
+              <span>introducing Style,a new CLI and more. </span>
               <svg
-                width="15"
-                height="15"
+                width="12"
+                height="12"
                 viewBox="0 0 15 15"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,13 +37,19 @@ export default function HomeLayout({
               </svg>
             </span>
           </a>
-          <h1 className="text-xl"> Build your component library.</h1>
-          <span className="text-[14px]">
+          <h1 className=" text-3xl tracking-tight font-bold">
+            {" "}
+            Build your component library.
+          </h1>
+          <span className="text-[10px] text-center w-[320px]">
             Beautifully designed components that you can copy and paste into
             your apps. Accessible . Customizable . Open source
           </span>
           <div>
-            <button className="text-[7px]"> Get Started</button>
+            <button className="text-[7px] text-black py-[5px] px-[6px] rounded bg-white">
+              {" "}
+              Get Started
+            </button>
             <button className="text-[7px]">
               {" "}
               <span className="inline-flex">
