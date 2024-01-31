@@ -39,7 +39,7 @@ const CustomCalendar: React.FC<MyComponentProps> = ({ themeColor }) => {
         </span>
         <button
           onClick={nextMonth}
-          className="px-4 py-2 bg-blue-500 text-white"
+          className={`px-4 py-2 bg-blue-500 text-white bg-[${themeColor}]`}
         >
           Next Month
         </button>

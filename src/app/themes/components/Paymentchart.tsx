@@ -14,7 +14,7 @@ interface Payment {
 }
 
 const PaymentsPage: React.FC = () => {
-  const [selectedColumn, setSelectedColumn] = useState<string>("all");
+  const [selectedColumn, setSelectedColumn] = useState<any>("all");
   const [payments, setPayments] = useState<Payment[]>([
     { id: 1, email: "john.doe@example.com", amount: 100, status: "Pending" },
     {
@@ -37,7 +37,7 @@ const PaymentsPage: React.FC = () => {
         value: `${payment.email}, ${payment.amount}, ${payment.status}`,
       };
     } else {
-      return { id: payment.id, value: payment[selectedColumn] };
+      return { id: payment.id };
     }
   });
 

@@ -2,7 +2,7 @@
 import * as React from "react";
 import { useState } from "react";
 import CustomCalendar from "./components/calendar";
-import PaymentsPage from "./components/Payment chart";
+import PaymentsPage from "./components/Paymentchart";
 import FormTheme from "./components/form";
 import Calendar from "react-calendar";
 import ReportTheme from "./components/reporttheme";
@@ -871,7 +871,7 @@ const Themes = () => {
                 className="grid
                 grid-cols-2"
               >
-                <Calendar themeColor={themeColor} />
+                <Calendar />
                 <CaloriesTheme themeColor={themeColor} />
               </div>
               <PaymentsPage />
